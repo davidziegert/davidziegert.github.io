@@ -3,7 +3,7 @@
 :root {
     --schwarz: #292826;
     --weiss: #ffffff;
-    --gelb: #F9D342;
+    --gelb: #f9d342;
 }
 
 
@@ -107,6 +107,58 @@ aside section {
     padding-bottom: 15vh;
 }
 
+aside section .author {
+    background: rgb(41, 40, 38);
+    background: linear-gradient(90deg, rgba(41, 40, 38, 1) 0%, rgba(41, 40, 38, 1) 12.5%, rgba(249, 211, 66, 1) 12.5%, rgba(249, 211, 66, 1) 87.5%, rgba(41, 40, 38, 1) 87.5%, rgba(41, 40, 38, 1) 100%);
+    display: grid;
+    grid-template-columns: 25% 62.5% 12.5%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+}
+
+aside section .author img {
+    border-radius: 50%;
+    border: 10px solid var(--schwarz);
+}
+
+aside section .author .author_details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--schwarz);
+}
+
+aside section .author .author_details .author_name {
+    font-size: 1.75em;
+    margin-bottom: 0.5em;
+}
+
+aside section .author .author_links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.75em;
+    text-align: center;
+}
+
+aside section .author .author_links a {
+    background-color: var(--gelb);
+    color: var(--schwarz);
+    width: 50%;
+    transition: all .3s;
+}
+
+aside section .author .author_links a:hover {
+    background-color: var(--schwarz);
+    color: var(--gelb);
+    width: 100%;
+    transition: all .3s;
+}
+
 footer {
     width: 100vw;
     min-height: 25vh;
@@ -194,7 +246,7 @@ p {
 }
 
 header section h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
     background-color: var(--gelb);
     color: var(--schwarz);
