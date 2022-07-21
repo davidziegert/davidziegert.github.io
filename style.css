@@ -1,9 +1,9 @@
 /* colors */
 
 :root {
-    --schwarz: #292826;
-    --weiss: #ffffff;
-    --gelb: #f9d342;
+    --schwarz: #212121;
+    --weiss: #EFEFEF;
+    --gelb: #FDCE00;
 }
 
 
@@ -43,7 +43,7 @@ nav section {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     gap: 2.5vw;
 }
