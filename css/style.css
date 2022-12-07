@@ -1,0 +1,73 @@
+/* THEMES */
+
+body {
+    --frame_vh: 4vh;
+    --frame_vw: 4vw;
+
+    --linebreak: 1rem;
+    --opac: 0.5;
+
+    --primary: #FEE600;
+    --secondary: #22B5FE;
+    --tertiary: #FE6EBC;
+    --nothing: #42004C;
+
+    --myfont: 'Creepster', cursive;
+}
+
+/* TAGS */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--primary);
+}
+
+#wrapper {
+    padding: var(--frame_vh) var(--frame_vw);
+}
+
+/* FONTS */
+
+body {
+    font-size: calc(15px + 0.390625vw);
+    line-height: 150%;
+}
+
+h1 {
+    font-size: 8rem;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+    text-align: center;
+    font-family: var(--myfont);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: var(--tertiary);
+    text-align: center;
+    font-family: var(--myfont);
+}
+
+p {
+    font-size: .8rem;
+    color: var(--nothing);
+    text-align: right;
+    font-family: var(--myfont);
+
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* CUSTOM */
+
