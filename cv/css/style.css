@@ -1,0 +1,388 @@
+/* THEMES */
+
+body[data-theme='theme-light'] {
+    --frame_vh: 2vh;
+    --frame_vw: 2vw;
+
+    --linebreak: 1rem;
+    --opac: 0.5;
+
+    --background: #FFFFFF;
+    --foreground: #393E46;
+
+    --primary: #1687A7;
+    --primary50: #D3E0EA;
+
+    --light: #FCFCFC;
+    --dark: #F8F8F8;
+}
+
+body[data-theme='theme-dark'] {
+    --frame_vh: 2vh;
+    --frame_vw: 2vw;
+
+    --linebreak: 1rem;
+    --opac: 0.5;
+
+    --background: #404258;
+    --foreground: #FFFFFF;
+
+    --primary: #EF9A53;
+    --primary50: #F5D5AE;
+
+    --light: #474E68;
+    --dark: #50577A;
+}
+
+/* TAGS */
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+/* FONTS */
+
+html {
+    font-size: calc(15px + 0.390625vw);
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+    padding-top: 0.67rem;
+    padding-bottom: 0.67rem;
+    font-weight: bold;
+    color: var(--primary);
+    font-family: 'Yellowtail', cursive;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    font-family: 'Yellowtail', cursive;
+}
+
+h3 {
+    font-size: 1.17rem;
+    padding-top: 1.0rem;
+    padding-bottom: 1.0rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+/* COLORS */
+
+/* mobil */
+@media only screen and (max-width: 767px) and (max-width: 1365px) {
+    body {
+        background: var(--background);
+        color: var(--foreground);
+    }
+
+    .dark {
+        background-color: var(--dark);
+    }
+}
+
+/* laptop */
+@media only screen and (min-width: 1366px) {
+    body {
+        background: var(--background);
+        color: var(--foreground);
+    }
+
+    .left {
+        background-color: var(--light);
+    }
+
+    .dark {
+        background-color: var(--light);
+    }
+
+    .darker {
+        background-color: var(--dark);
+    }
+}
+
+/* GRID */
+
+/* mobil */
+@media only screen and (max-width: 767px) and (max-width: 1365px) {
+    .wrapper {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 0px 0px;
+    }
+}
+
+/* laptop */
+@media only screen and (min-width: 1366px) {
+    .wrapper {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: auto;
+        gap: 0px 0px;
+    }
+}
+
+/* MARGIN & PADDING */
+
+/* mobil */
+@media only screen and (max-width: 767px) and (max-width: 1365px) {
+    .left {
+        padding: calc(var(--frame_vh)) calc(var(--frame_vw)*2) 0 calc(var(--frame_vw)*2);
+    }
+
+    .right {
+        padding: calc(var(--frame_vh)) calc(var(--frame_vw)*2);
+    }
+}
+
+/* laptop */
+@media only screen and (min-width: 1366px) {
+    .left {
+        padding-left: 25vw;
+        padding-right: var(--frame_vw);
+        padding-top: calc(var(--frame_vh)*2);
+        padding-bottom: calc(var(--frame_vh)*2);
+    }
+
+    .right {
+        padding-right: 25vw;
+        padding-left: var(--frame_vw);
+        padding-top: calc(var(--frame_vh)*2);
+        padding-bottom: calc(var(--frame_vh)*2);
+    }
+}
+
+/* OTHERS */
+
+/* mobil */
+@media only screen and (max-width: 767px) and (max-width: 1365px) {
+    a {
+        text-decoration: underline;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo img {
+        width: 60%;
+        object-fit: contain;
+    }
+
+    .years {
+        padding-top: var(--linebreak);
+        padding-bottom: var(--linebreak);
+    }
+
+    .time {
+        color: var(--primary);
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .skills {
+        font-size: 0.83rem;
+        margin-bottom: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: calc(var(--linebreak)/4);
+
+    }
+
+    .outside {
+        padding: calc(var(--linebreak)/4);
+    }
+
+    .p0 {
+        background: linear-gradient(90deg, var(--primary50) 0%, var(--primary50) 0%, var(--light) 100%, var(--light) 100%);
+    }
+
+    .p10 {
+        background: linear-gradient(90deg, var(--primary50) 0%, var(--primary50) 10%, var(--light) 10%, var(--light) 100%);
+
+    }
+
+    .p20 {
+        background: linear-gradient(90deg, var(--primary50) 0%, var(--primary50) 20%, var(--light) 20%, var(--light) 100%);
+
+    }
+
+    .p30 {
+        background: linear-gradient(90deg, var(--primary50) 0%, var(--primary50) 30%, var(--light) 30%, var(--light) 100%);
+
+    }
+
+    .p40 {
+        background: linear-gradient(90deg, var(--primary50) 0%, var(--primary50) 40%, var(--light) 40%, var(--light) 100%);
+
+    }
+
+    .p50 {
+        background: linear-gradient(90deg, var(--primary50) 0%, var(--primary50) 50%, var(--light) 50%, var(--light) 100%);
+
+    }
+
+    .p60 {
+        background: linear-gradient(90deg, var(--primary) 0%, var(--primary) 60%, var(--light) 60%, var(--light) 100%);
+
+    }
+
+    .p70 {
+        background: linear-gradient(90deg, var(--primary) 0%, var(--primary) 70%, var(--light) 70%, var(--light) 100%);
+
+    }
+
+    .p80 {
+        background: linear-gradient(90deg, var(--primary) 0%, var(--primary) 80%, var(--light) 80%, var(--light) 100%);
+
+    }
+
+    .p90 {
+        background: linear-gradient(90deg, var(--primary) 0%, var(--primary) 90%, var(--light) 90%, var(--light) 100%);
+
+    }
+
+    .p100 {
+        background: linear-gradient(90deg, var(--primary) 0%, var(--primary) 0%, var(--light) 100%, var(--light) 100%);
+
+    }
+}
+
+/* laptop */
+@media only screen and (min-width: 1366px) {
+    a {
+        text-decoration: underline;
+    }
+
+    #logo img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .years {
+        padding-top: var(--linebreak);
+        padding-bottom: var(--linebreak);
+    }
+
+    .time {
+        color: var(--primary);
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: var(--linebreak);
+    }
+
+    .skill-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: var(--linebreak);
+        margin-bottom: var(--linebreak);
+    }
+
+    .skills {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--linebreak);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .outside {
+        height: 125px;
+        width: 125px;
+        border-radius: 50%;
+
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inside {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background: var(--background);
+        color: var(--primary);
+
+        z-index: 20;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .p0 {
+        background-image: conic-gradient(var(--primary50) 0%, var(--light) 0);
+    }
+
+    .p10 {
+        background-image: conic-gradient(var(--primary50) 10%, var(--light) 0);
+    }
+
+    .p20 {
+        background-image: conic-gradient(var(--primary50) 20%, var(--light) 0);
+    }
+
+    .p30 {
+        background-image: conic-gradient(var(--primary50) 30%, var(--light) 0);
+    }
+
+    .p40 {
+        background-image: conic-gradient(var(--primary50) 40%, var(--light) 0);
+    }
+
+    .p50 {
+        background-image: conic-gradient(var(--primary) 50%, var(--light) 0);
+    }
+
+    .p60 {
+        background-image: conic-gradient(var(--primary) 60%, var(--light) 0);
+    }
+
+    .p70 {
+        background-image: conic-gradient(var(--primary) 70%, var(--light) 0);
+    }
+
+    .p80 {
+        background-image: conic-gradient(var(--primary) 80%, var(--light) 0);
+    }
+
+    .p90 {
+        background-image: conic-gradient(var(--primary) 90%, var(--light) 0);
+    }
+
+    .p100 {
+        background-image: conic-gradient(var(--primary) 100%, var(--light) 0);
+    }
+}
