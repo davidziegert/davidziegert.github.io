@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="AUTHOR" />
+    <meta name="description" content="DESCRIPTION" />
+    <meta name="keywords" content="KEYWORD, KEYWORD" />
+
+    <title>graffiti.tmp</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="TITLE" />
+    <meta property="og:description" content="DESCRIPTION" />
+    <meta property="og:image" content="1.200 x 630 pixels" />
+    <meta property="og:site_name" content="SITENAME" />
+    <meta property="og:url" content="URL" />
+
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" />
+    <link rel="apple-touch-icon" href="./img/touch.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/print.css" media="print" />
+    <link rel="stylesheet" href="./css/reset.css" media="screen" />
+    <link rel="stylesheet" href="./css/skeleton.css" media="screen" />
+    <link rel="stylesheet" href="./css/style.css" media="screen" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <section>
+          <h1>Hello everyone!</h1>
+          <p>
+            At this point I would like to present my collection of street art
+            photos.
+          </p>
+          <p>
+            These photos were taken between 2018 and 2022 while traveling
+            through Thailand.
+          </p>
+          <p>
+            Taken in places around Bangkok, Chiang Mai, Nakhon Ratchasima, Udon
+            Thani, Phetchaburi and many more.
+          </p>
+          <p>
+            Including pictures of one of Thailand's most famous street artists
+            "Patcharapol Tangruen", also known as "Alex Face" and others!
+          </p>
+        </section>
+      </header>
+      <main>
+        <section>
+          <div class="gallery"></div>
+        </section>
+      </main>
+      <footer>
+        <section>
+          <ul>
+            <li>
+              <a
+                href="https://fonts.google.com/specimen/Monoton"
+                title="Google-Font: Monoton"
+                target="_blank"
+                >Font: Monoton - Designed by Vernon Adams</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://fonts.google.com/specimen/Rubik"
+                title="Google-Font: Rubik"
+                target="_blank"
+                >Font: Rubik - Hubert and Fischer, Meir Sadan, Cyreal, Daniel
+                Grumer, Omaima Dajani
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.freepik.com/free-vector/graffiti-design-wall_1405451.htm"
+                title="Image by sergey_kandakov on Freepik"
+                target="_blank"
+                >Image by sergey_kandakov on Freepik</a
+              >
+            </li>
+          </ul>
+        </section>
+      </footer>
+    </div>
+
+    <a href="#" class="scroll-top" address="true">&#11145;</a>
+
+    <!-- Scripts -->
+    <script src="./js/gallery.js"></script>
+
+    <script>
+      $(function () {
+        $(".scroll-up").click(function () {
+          $("html, body").animate(
+            { scrollTop: $("header").offset().top },
+            "slow"
+          );
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>
