@@ -219,8 +219,7 @@ const videos = [
     id: 38,
     img: "https://img.youtube.com/vi/vopMx1_7Ojg/maxresdefault.jpg",
     link: "https://www.youtube-nocookie.com/embed/vopMx1_7Ojg",
-    title:
-      "NiNi Music - HOMELAND (Taiwan Folk Metal) ft. Jayant Bhadula of Bloodywood",
+    title: "NiNi Music - HOMELAND (Taiwan Folk Metal) ft. Jayant Bhadula of Bloodywood",
   },
   {
     id: 39,
@@ -244,15 +243,13 @@ const videos = [
     id: 42,
     img: "https://img.youtube.com/vi/0y_3Ax7XabI/maxresdefault.jpg",
     link: "https://www.youtube-nocookie.com/embed/0y_3Ax7XabI",
-    title:
-      "MURAMASA 【村正】 ☯ Japanese Trap & Bass Type Beats ☯ Trapanese Drift Hip Hop Music Mix",
+    title: "MURAMASA 【村正】 ☯ Japanese Trap & Bass Type Beats ☯ Trapanese Drift Hip Hop Music Mix",
   },
   {
     id: 43,
     img: "https://img.youtube.com/vi/bPTjayue58I/maxresdefault.jpg",
     link: "https://www.youtube-nocookie.com/embed/bPTjayue58I",
-    title:
-      "HATTORI V2 【服部】 ~ ☯ Japanese Trap & Bass Type Beat ☯ Trapanese Lofi Hip Hop Music Mix ",
+    title: "HATTORI V2 【服部】 ~ ☯ Japanese Trap & Bass Type Beat ☯ Trapanese Lofi Hip Hop Music Mix ",
   },
   {
     id: 44,
@@ -271,6 +268,66 @@ const videos = [
     img: "https://img.youtube.com/vi/-ew_bfFvros/maxresdefault.jpg",
     link: "https://www.youtube-nocookie.com/embed/-ew_bfFvros",
     title: "Home Free - Man of Constant Sorrow",
+  },
+  {
+    id: 47,
+    img: "https://img.youtube.com/vi/zTArYTvpLZA/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/zTArYTvpLZA",
+    title: "Sam Cooke - Twistin' the Night Away",
+  },
+  {
+    id: 48,
+    img: "https://img.youtube.com/vi/WBugBEWVnpA/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/WBugBEWVnpA",
+    title: "Mel Tormé - Comin' Home Baby",
+  },
+  {
+    id: 49,
+    img: "https://img.youtube.com/vi/PeMvMNpvB5M/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/PeMvMNpvB5M",
+    title: "Heart - Barracuda",
+  },
+  {
+    id: 50,
+    img: "https://img.youtube.com/vi/ucy-k_c_ex0/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/ucy-k_c_ex0",
+    title: "Tom Swoon - Shingaling",
+  },
+  {
+    id: 51,
+    img: "https://img.youtube.com/vi/QH3Fx41Jpl4/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/QH3Fx41Jpl4",
+    title: "Nina Simone - Sinnerman",
+  },
+  {
+    id: 52,
+    img: "https://img.youtube.com/vi/QxizIrbcSuU/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/QxizIrbcSuU",
+    title: "The Doors - Soul Kitchen",
+  },
+  {
+    id: 53,
+    img: "https://img.youtube.com/vi/HjmAPAoxCb0/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/HjmAPAoxCb0",
+    title: "The Stranglers - Golden Brown",
+  },
+  {
+    id: 54,
+    img: "https://img.youtube.com/vi/ltrMfT4Qz5Y/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/ltrMfT4Qz5Y",
+    title: "Kenny Loggins - Footloose",
+  },
+  {
+    id: 55,
+    img: "https://img.youtube.com/vi/w6Q3mHyzn78/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/w6Q3mHyzn78",
+    title: "Tiffany - I Think We're Alone Now",
+  },
+  {
+    id: 56,
+    img: "https://img.youtube.com/vi/2B4bsqYxwo0/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/2B4bsqYxwo0",
+    title: "The Stranglers - No More Heroes",
   },
 ];
 
