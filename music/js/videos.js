@@ -329,6 +329,30 @@ const videos = [
     link: "https://www.youtube-nocookie.com/embed/2B4bsqYxwo0",
     title: "The Stranglers - No More Heroes",
   },
+  {
+    id: 57,
+    img: "https://img.youtube.com/vi/5UN05MOrJMk/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/5UN05MOrJMk",
+    title: "Anthony B & Little Lion Sound - Sound Killer",
+  },
+  {
+    id: 58,
+    img: "https://img.youtube.com/vi/R8iaViNIy3U/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/R8iaViNIy3U",
+    title: "Bo Burnham - Bezos",
+  },
+  {
+    id: 59,
+    img: "https://img.youtube.com/vi/HxL19VWL9TM/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/HxL19VWL9TM",
+    title: "Jaxomy x Agatino Romero x Raffaella Carrà – Pedro",
+  },
+  {
+    id: 60,
+    img: "https://img.youtube.com/vi/iMZOrEbS7cU/maxresdefault.jpg",
+    link: "https://www.youtube-nocookie.com/embed/iMZOrEbS7cU",
+    title: "Raffaella Carrà - Pedro",
+  },
 ];
 
 const gallery = document.querySelector(".videos");
