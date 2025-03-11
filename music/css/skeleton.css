@@ -559,7 +559,7 @@ main blockquote {
     margin-right: auto;
     margin-left: auto;
     font-style: italic;
-    border-left: 5px solid;
+    border-left: 5px solid currentColor;
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-right: 1px solid;
