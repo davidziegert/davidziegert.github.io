@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,126 +9,393 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
+    <!-- Title Tag -->
     <title>davidziegert.github.io</title>
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/icon.svg" />
+    <link rel="apple-touch-icon" href="./assets/images/icon.svg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-      html {
-        scroll-behavior: smooth;
-        user-select: none;
-        font-family: monospace;
-        font-size: 16px;
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/print.css" media="print" />
+    <link rel="stylesheet" href="./assets/css/reset.css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/skeleton.css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/style.css" media="screen" />
+    <link rel="stylesheet" href="./assets/css/theme.css" media="screen" />
 
-        background: rgb(255, 94, 31);
-        background: -moz-linear-gradient(180deg, rgba(255, 94, 31, 1) 0%, rgba(246, 206, 110, 1) 100%);
-        background: -webkit-linear-gradient(180deg, rgba(255, 94, 31, 1) 0%, rgba(246, 206, 110, 1) 100%);
-        background: linear-gradient(180deg, rgba(255, 94, 31, 1) 0%, rgba(246, 206, 110, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff5e1f",endColorstr="#f6ce6e",GradientType=1);
-      }
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
 
-      body {
-        height: auto;
-        width: 100vw;
-        overflow-x: hidden;
-        overflow-y: auto;
-        color: #000000;
-      }
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
 
-      .wrapper {
-        min-height: 100vh;
-      }
-
-      nav {
-        height: 100vh;
-      }
-
-      nav ul {
-        display: flex;
-        flex-direction: column;
-      }
-
-      nav ul li:nth-child(1) {
-        height: 25vh;
-        background-color: #ff5e1f;
-        box-shadow: 0 0.5em 0.5em hsla(0, 0%, 0%, 0.3);
-        z-index: 4;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      nav ul li:nth-child(2) {
-        height: 25vh;
-        background-color: #e7e6de;
-        box-shadow: 0 0.5em 0.5em hsla(0, 0%, 0%, 0.3);
-        z-index: 3;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      nav ul li:nth-child(3) {
-        height: 25vh;
-        background-color: #5ac4c3;
-        box-shadow: 0 0.5em 0.5em hsla(0, 0%, 0%, 0.3);
-        z-index: 2;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      nav ul li:nth-child(4) {
-        height: 25vh;
-        background-color: #f6ce6e;
-        box-shadow: 0 0.5em 0.5em hsla(0, 0%, 0%, 0.3);
-        z-index: 1;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      nav ul li a {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 12px;
-        text-decoration: none;
-        color: #000000;
-      }
-    </style>
-  </head>
-
-  <body>
+<body>
     <div class="wrapper">
-      <nav>
-        <ul>
-          <li>
-            <a href="./graffiti/index.html"><img src="https://www.svgrepo.com/download/511582/camera-936.svg" height="32px" width="auto" /><span>Gallery</span></a>
-          </li>
-          <li>
-            <a href="./thailand/index.html"><img src="https://www.svgrepo.com/download/511307/airplane-mode-1406.svg" height="32px" width="auto" /><span>Thailand</span></a>
-          </li>
-          <li>
-            <a href="./music/index.html"><img src="https://www.svgrepo.com/download/511793/desktop-231.svg" height="32px" width="auto" /><span>Music</span></a>
-          </li>
-          <li>
-            <a href="https://github.com/davidziegert"><img src="https://www.svgrepo.com/download/512317/github-142.svg" height="32px" width="auto" /><span>GitHub</span></a>
-          </li>
-        </ul>
-      </nav>
+        <nav>
+            <menu>
+                <button onclick="setThemeLight()"><i class="bi bi-sun"></i></button>
+                <button onclick="setThemeDark()"><i class="bi bi-moon"></i></button>
+            </menu>
+        </nav>
+        <header>
+            <div class="row">
+                <div class="box name">
+                    <h1><span>David</span> <span>Ziegert</span></h1>
+                    <span class="subtitle">IT-Administrator</span>
+                </div>
+                <div class="box contact">
+                    <h3>Adresse</h3>
+                    <address>
+                        Universität Potsdam<br>
+                        Campus Golm<br>
+                        Karl-Liebknecht-Strasse 24-25<br>
+                        Haus 14, Raum 3.34<br>
+                        14476 Potsdam
+                    </address>
+                </div>
+                <div class="box address">
+                    <h3>Kontakt</h3>
+                    <a title="hier anrufen" href="tel: 49331977231118"><i class="bi bi-telephone-fill"></i> (+49) 331 977-231118</a>
+                    <a title="eine E-Mail senden" href="mailto:david.ziegert@uni-potsdam.de"><i class="bi bi-envelope-fill"></i> david.ziegert@uni-potsdam.de</a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://davidziegert.github.io/"><i class="bi bi-box-arrow-up-right"></i> Homepage</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="row">
+                <div class="box">
+                    <h2>Über mich</h2>
+                    <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <h3 class="no-margin">Berufserfahrung</h3>
+                </div>
+            </div>
+            <div class="row flex grid">
+                <div class="box work">
+                    <div class="left">
+                        <span class="month" data-target="79">0</span>
+                        <span>Monate</span>
+                    </div>
+                    <div class="middle">
+                        <span>06.2018 - 12.2025</span>
+                        <span>IT-Administrator</span>
+                        <span><a target="_blank" rel="noopener noreferrer" href="https://www.sfb1287.uni-potsdam.de/">Universität Potsdam</a></span>
+                    </div>
+                    <div class="right">
+                        <span><i class="bi bi-person-workspace"></i></span>
+                    </div>
+                </div>
+                <div class="box work">
+                    <div class="left">
+                        <span class="month" data-target="26">0</span>
+                        <span>Monate</span>
+                    </div>
+                    <div class="middle">
+                        <span>12.2015 - 01.2018</span>
+                        <span>MA des Operativen IT-Managements</span>
+                        <span><a target="_blank" rel="noopener noreferrer" href="https://www.medicalschool-berlin.de/">Medical School Berlin</a></span>
+                    </div>
+                    <div class="right">
+                        <span><i class="bi bi-person-workspace"></i></span>
+                    </div>
+                </div>
+                <div class="box work">
+                    <div class="left">
+                        <span class="month" data-target="24">0</span>
+                        <span>Monate</span>
+                    </div>
+                    <div class="middle">
+                        <span>11.2013 - 10.2015</span>
+                        <span>Labor- & IT-Systemadministrator</span>
+                        <span><a target="_blank" rel="noopener noreferrer" href="https://www.uni-potsdam.de">Universität Potsdam</a></span>
+                    </div>
+                    <div class="right">
+                        <span><i class="bi bi-person-workspace"></i></span>
+                    </div>
+                </div>
+                <div class="box work">
+                    <div class="left">
+                        <span class="month" data-target="15">0</span>
+                        <span>Monate</span>
+                    </div>
+                    <div class="middle">
+                        <span>04.2012 - 06.2013</span>
+                        <span>Forschungsassistent</span>
+                        <span><a target="_blank" rel="noopener noreferrer" href="https://www.htw-berlin.de/">HTW Berlin</a> & <a target="_blank" rel="noopener noreferrer" href="https://www.keywind.de/">Key Wind Energy GmbH</a></span>
+                    </div>
+                    <div class="right">
+                        <span><i class="bi bi-person-workspace"></i></span>
+                    </div>
+                </div>
+                <div class="box work">
+                    <div class="left">
+                        <span class="month" data-target="17">0</span>
+                        <span>Monate</span>
+                    </div>
+                    <div class="middle">
+                        <span>08.2010 - 12.2011</span>
+                        <span>Studentischer Mitarbeiter</span>
+                        <span><a target="_blank" rel="noopener noreferrer" href="https://www.bht-berlin.de/">Beuth Hochschule für Technik Berlin</a> & <a target="_blank" rel="noopener noreferrer" href="http://www.imbc.de/">IMBC GmbH</a></span>
+                    </div>
+                    <div class="right">
+                        <span><i class="bi bi-person-workspace"></i></span>
+                    </div>
+                </div>
+                <div class="box work">
+                    <div class="left">
+                        <span class="month" data-target="5">0</span>
+                        <span>Monate</span>
+                    </div>
+                    <div class="middle">
+                        <span>05.2010 - 09.2010</span>
+                        <span>Studentischer Mitarbeiter</span>
+                        <span><a target="_blank" rel="noopener noreferrer" href="https://www.quentic.de/ecointense/">EcoIntense GmbH</a></span>
+                    </div>
+                    <div class="right">
+                        <span><i class="bi bi-person-workspace"></i></span>
+                    </div>
+                </div>
+                <div class="box work">
+                    <div class="left">
+                        <span class="month" data-target="2">0</span>
+                        <span>Monate</span>
+                    </div>
+                    <div class="middle">
+                        <span>02.2010 - 03.2010</span>
+                        <span>Studentischer Mitarbeiter</span>
+                        <span><a target="_blank" rel="noopener noreferrer" href="https://www.sbb-mbh.de">Sonderabfallgesellschaft Brandenburg/Berlin mbH</a></span>
+                    </div>
+                    <div class="right">
+                        <span><i class="bi bi-person-workspace"></i></span>
+                    </div>
+                </div>
+                <div class="box work">
+                    <div class="left">
+                        <span class="month" data-target="6">0</span>
+                        <span>Monate</span>
+                    </div>
+                    <div class="middle">
+                        <span>01.2009 - 06.2009</span>
+                        <span>Studentischer Mitarbeiter</span>
+                        <span><a target="_blank" rel="noopener noreferrer" href="https://www.sbb-mbh.de">Sonderabfallgesellschaft Brandenburg/Berlin mbH</a></span>
+                    </div>
+                    <div class="right">
+                        <span><i class="bi bi-person-workspace"></i></span>
+                    </div>
+                </div>
+                <div class="box work">
+                    <div class="left">
+                        <span class="month" data-target="3">0</span>
+                        <span>Monate</span>
+                    </div>
+                    <div class="middle">
+                        <span>11.2005 - 01.2006</span>
+                        <span>Praktikant</span>
+                        <span>on line Datensysteme GmbH</span>
+                    </div>
+                    <div class="right">
+                        <span><i class="bi bi-person-workspace"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <h3 class="no-margin">Ausbildung & Studium</h3>
+                </div>
+            </div>
+            <div class="row flex grid">
+                <div class="box education">
+                    <div class="left">
+                        <span>11.2009 - 01.2012</span>
+                        <span>Master - Betriebliche Umweltinformatik</span>
+                        <span>Thema: "Entwicklung einer mobilen Anwendung für die Gefahrgutkontrolle im Schienenverkehr"</span>
+                        <span><a target="_blank" rel="noopener noreferrer" href="https://bui.htw-berlin.de/">Hochschule für Technik und Wirtschaft Berlin</a></span>
+                    </div>
+                    <div class="right">
+                        <span><i class="bi bi-mortarboard-fill"></i></span>
+                    </div>
+                </div>
+                <div class="box education">
+                    <div class="left">
+                        <span>10.2006 - 11.2009</span>
+                        <span>Bachelor - Betriebliche Umweltinformatik</span>
+                        <span>Thema: "Einstiegsleitfaden für das elektronische Abfallnachweisverfahren"</span>
+                        <span><a target="_blank" rel="noopener noreferrer" href="https://bui.htw-berlin.de/">Hochschule für Technik und Wirtschaft Berlin</a></span>
+                    </div>
+                    <div class="right">
+                        <span><i class="bi bi-mortarboard-fill"></i></span>
+                    </div>
+                </div>
+                <div class="box education">
+                    <div class="left">
+                        <span>09.2003 - 08.2006</span>
+                        <span>IT-Systemkaufmann (IHK)</span>
+                        <span></span>
+                        <span>Akademie für Berufsförderung und Umschulung gGmbH, Berlin</span>
+                    </div>
+                    <div class="right">
+                        <span><i class="bi bi-mortarboard-fill"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row grid-small">
+                <div class="box">
+                    <h3 class="no-margin">Zusätzliche Qualifikationen</h3>
+                </div>
+                <div class="box training">
+                    <ul>
+                        <li>ITIL - Foundation for IT Service Management (2015)</li>
+                        <li>Einführung in die Arbeit mit ZEDAL (2010)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row grid-small">
+                <div class="box">
+                    <h3 class="no-margin">Sprachkenntnisse</h3>
+                </div>
+                <div class="box speech">
+                    <ul>
+                        <li>Deutsch (Muttersprache)</li>
+                        <li>Englisch (B2 - Selbständige Sprachverwendung)</li>
+                        <li>Französisch (A2 - Grundlegende Kenntnisse)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="box">
+                    <h3 class="no-margin">IT-Kenntnisse</h3>
+                </div>
+            </div>
+            <div class="row flex grid">
+                <div class="box it">
+                    <h4>Virtualisierung</h4>
+                    <div class="item">
+                        <div class="left">
+                            <span>VMware ESXi</span>
+                            <span>Proxmox VE</span>
+                            <span>Hyper-V Manager</span>
+                        </div>
+                        <div class="right">
+                            <progress max="100" value="50">50%</progress>
+                            <progress max="100" value="40">40%</progress>
+                            <progress max="100" value="70">70%</progress>
+                        </div>
+                    </div>
+                </div>
+                <div class="box it">
+                    <h4>Betriebssysteme</h4>
+                    <div class="item">
+                        <div class="left">
+                            <span>Windows</span>
+                            <span>Linux</span>
+                            <span>macOS</span>
+                        </div>
+                        <div class="right">
+                            <progress max="100" value="70">70%</progress>
+                            <progress max="100" value="50">50%</progress>
+                            <progress max="100" value="30">30%</progress>
+                        </div>
+                    </div>
+                </div>
+                <div class="box it">
+                    <h4>Datenbanken</h4>
+                    <div class="item">
+                        <div class="left">
+                            <span>MySQL</span>
+                            <span>SQLite</span>
+                            <span>Microsoft Access</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="right">
+                            <progress max="100" value="70">70%</progress>
+                            <progress max="100" value="70">70%</progress>
+                            <progress max="100" value="70">70%</progress>
+                            <progress max="100" value="20">20%</progress>
+                        </div>
+                    </div>
+                </div>
+                <div class="box it">
+                    <h4>Content Management Systeme</h4>
+                    <div class="item">
+                        <div class="left">
+                            <span>WordPress</span>
+                            <span>Typo3</span>
+                            <span>Grav</span>
+                            <span>Kirby</span>
+                        </div>
+                        <div class="right">
+                            <progress max="100" value="80">80%</progress>
+                            <progress max="100" value="50">50%</progress>
+                            <progress max="100" value="60">60%</progress>
+                            <progress max="100" value="70">70%</progress>
+                        </div>
+                    </div>
+                </div>
+                <div class="box it">
+                    <h4>Monitoring</h4>
+                    <div class="item">
+                        <div class="left">
+                            <span>Checkmk</span>
+                            <span>Prometheus</span>
+                        </div>
+                        <div class="right">
+                            <progress max="100" value="25">25%</progress>
+                            <progress max="100" value="25">25%</progress>
+                        </div>
+                    </div>
+                </div>
+                <div class="box it">
+                    <h4>Programmierung</h4>
+                    <div class="item">
+                        <div class="left">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>C#</span>
+                            <span>Python</span>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="right">
+                            <progress max="100" value="90">90%</progress>
+                            <progress max="100" value="70">70%</progress>
+                            <progress max="100" value="50">50%</progress>
+                            <progress max="100" value="60">60%</progress>
+                            <progress max="100" value="30">30%</progress>
+                            <progress max="100" value="10">10%</progress>
+                            <progress max="100" value="10">10%</progress>
+                        </div>
+                    </div>
+                </div>
+                <div class="box it">
+                    <h4>Zutrittssysteme</h4>
+                    <div class="item">
+                        <div class="left">
+                            <span>DORMA Matrix XS Plus</span>
+                        </div>
+                        <div class="right">
+                            <progress max="100" value="70">70%</progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <menu>
+                <button onclick="goToTop()"><i class="bi bi-arrow-up"></i></button>
+            </menu>
+        </footer>
     </div>
-  </body>
+
+    <!-- Scripts -->
+    <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
