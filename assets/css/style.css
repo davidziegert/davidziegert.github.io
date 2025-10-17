@@ -117,6 +117,7 @@ body {
 
   .content > header .row {
     height: 50vh;
+    max-height: 600px;
     padding: 1rem 0;
   }
 
@@ -253,6 +254,7 @@ body {
 
   .content > header .row {
     height: 75vh;
+    max-height: 900px;
     padding: 1rem 0;
   }
 
