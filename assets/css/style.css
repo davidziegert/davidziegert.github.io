@@ -390,7 +390,7 @@ body {
 .content > main .box.skillz .item {
   width: 100%;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 1fr auto;
   grid-template-rows: auto;
   gap: 1rem;
 }
