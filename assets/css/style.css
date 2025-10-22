@@ -390,35 +390,17 @@ body {
 .content > main .box.skillz .item {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 1rem;
 }
 
+.content > main .box.skillz .item span {
+text-align: right;
+}
+
 .content > main .box.skillz .item progress {
   width: 100%;
-  min-width: 33vw;
   height: 1rem;
-  border: 1px solid currentColor;
-}
-
-.content > main .box.skillz .item progress::-webkit-progress-bar {
-  width: 100%;
-  height: 1rem;
-  min-width: 33vw;
-  border: 1px solid currentColor;
-}
-
-.content > main .box.skillz .item progress::-webkit-progress-value {
-  width: 100%;
-  height: 1rem;
-  min-width: 33vw;
-  border: 1px solid currentColor;
-}
-
-.content > main .box.skillz .item progress::-moz-progress-bar {
-  width: 100%;
-  height: 1rem;
-  min-width: 33vw;
   border: 1px solid currentColor;
 }
