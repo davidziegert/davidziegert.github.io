@@ -396,6 +396,25 @@ body {
 }
 
 .content > main .box.skillz .item progress {
+  width: 100%;
+  height: 1rem;
+  border: 1px solid currentColor;
+}
+
+.content > main .box.skillz .item progress::-webkit-progress-bar {
+  width: 100%;
+  height: 1rem;
+  border: 1px solid currentColor;
+}
+
+.content > main .box.skillz .item progress::-webkit-progress-value {
+  width: 100%;
+  height: 1rem;
+  border: 1px solid currentColor;
+}
+
+.content > main .box.skillz .item progress::-moz-progress-bar {
+  width: 100%;
   height: 1rem;
   border: 1px solid currentColor;
 }
