@@ -1,0 +1,555 @@
+/* fonts  */
+
+body {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 150%;
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+@media (width >=1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+h6 {
+  font-size: 1.25rem;
+  letter-spacing: -0.75%;
+  line-height: 150%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.wrapper > main .row .column .box-skillz .headline,
+.wrapper > main .row .column .box-job span,
+h5 {
+  font-size: 1.56rem;
+  letter-spacing: -1%;
+  line-height: 140%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h4 {
+  font-size: 1.95rem;
+  letter-spacing: -1.25%;
+  line-height: 130%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h3 {
+  font-size: 2.44rem;
+  letter-spacing: -1.5%;
+  line-height: 120%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h2 {
+  font-size: 3.05rem;
+  letter-spacing: -1.75%;
+  line-height: 110%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  font-size: 3.81rem;
+  letter-spacing: -2%;
+  line-height: 100%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+main h2,
+main h3 {
+  margin: 1.5rem 0;
+}
+
+main h4,
+main h5,
+main h6 {
+  margin: 1.25rem 0;
+}
+
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+:root {
+  --background: #1c1c1c;
+  --headline: #fefefe;
+  --text: #e4e4e4;
+
+  --border: #595b5e;
+  --box: #3c3c3c;
+
+  --primary: #ffc700;
+  --secondary: #cc9f00;
+  --tertiary: #970;
+}
+
+/* mobile */
+
+@media (0px <=width <=767px) {
+  html,
+  body {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > header {
+    background-color: var(--background);
+    color: var(--primary);
+    border-bottom: 1px solid var(--border);
+    font-size: 1.25rem;
+  }
+
+  .wrapper > nav {
+    background-color: var(--box);
+    color: var(--primary);
+    border-left: 1px solid var(--border);
+    font-size: 1.25rem;
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main .row {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > main .row .column:first-of-type {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > main .row:nth-of-type(2) .column:first-of-type {
+    border-bottom: 0;
+  }
+
+  .wrapper > aside {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > aside .row {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > aside .row .column:nth-of-type(2) {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > aside a {
+    background-color: var(--background);
+    color: var(--primary);
+  }
+
+  .wrapper > footer {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .body-scroller {
+    color: var(--primary);
+    font-size: 1.25rem;
+  }
+}
+
+/* tablet */
+
+@media (768px <=width <=1023px) {
+  html,
+  body {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > header {
+    background-color: var(--background);
+    color: var(--primary);
+    border-bottom: 1px solid var(--border);
+    font-size: 1.5rem;
+  }
+
+  .wrapper > nav {
+    background-color: var(--box);
+    color: var(--primary);
+    border-left: 1px solid var(--border);
+    font-size: 1.5rem;
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main .row {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > main .row:first-of-type .column:first-of-type {
+    border-right: 1px solid var(--border);
+    border-bottom: 0;
+  }
+
+  .wrapper > main .row .column:first-of-type {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > main .row:nth-of-type(2) .column:first-of-type {
+    border-bottom: 0;
+  }
+
+  .wrapper > aside {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > aside .row {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > aside .row .column:nth-of-type(2) {
+    border-top: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+  }
+
+  .wrapper > aside .row .column:nth-of-type(3) {
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > aside a {
+    background-color: var(--background);
+    color: var(--primary);
+  }
+
+  .wrapper > footer {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .body-scroller {
+    color: var(--primary);
+    font-size: 1.5rem;
+  }
+}
+
+/* laptop */
+
+@media (1024px <=width <=1279px) {
+  html,
+  body {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > header {
+    background-color: var(--background);
+    color: var(--primary);
+  }
+
+  .wrapper > nav {
+    background-color: var(--background);
+    color: var(--primary);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .row {
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main .row {
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > main .row:last-of-type {
+    border-bottom: 0;
+  }
+
+  .wrapper > main .row:first-of-type .column:first-of-type {
+    border-right: 1px solid var(--border);
+  }
+
+  .wrapper > main .row:nth-of-type(3) .column:first-of-type {
+    border-right: 1px solid var(--border);
+  }
+
+  .wrapper > main .row:nth-of-type(4) .column:first-of-type {
+    border-left: 1px solid var(--border);
+  }
+
+  .wrapper > main .row:nth-of-type(5) .column:first-of-type {
+    border-right: 1px solid var(--border);
+  }
+
+  .wrapper > aside {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > aside .row {
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+  }
+
+  .wrapper > aside a {
+    background-color: var(--background);
+    color: var(--primary);
+  }
+
+  .wrapper > aside .row .column:nth-of-type(2) {
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+  }
+
+  .wrapper > footer {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > footer .row {
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+  }
+
+  .body-scroller {
+    color: var(--primary);
+    font-size: 1.75rem;
+  }
+}
+
+/* desktop */
+
+@media (width >=1280px) {
+  html,
+  body {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > header {
+    background-color: var(--background);
+    color: var(--primary);
+  }
+
+  .wrapper > nav {
+    background-color: var(--background);
+    color: var(--primary);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .row {
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+  }
+
+  .wrapper > main {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > main .row {
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > main .row:last-of-type {
+    border-bottom: 0;
+  }
+
+  .wrapper > main .row:first-of-type .column:first-of-type {
+    border-right: 1px solid var(--border);
+  }
+
+  .wrapper > main .row:nth-of-type(3) .column:first-of-type {
+    border-left: 1px solid var(--border);
+  }
+
+  .wrapper > main .row:nth-of-type(4) .column:first-of-type {
+    border-right: 1px solid var(--border);
+  }
+
+  .wrapper > main .row:nth-of-type(5) .column:first-of-type {
+    border-left: 1px solid var(--border);
+  }
+
+  .wrapper > aside {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > aside .row {
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+  }
+
+  .wrapper > aside a {
+    background-color: var(--background);
+    color: var(--primary);
+  }
+
+  .wrapper > aside .row .column:nth-of-type(2) {
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+  }
+
+  .wrapper > footer {
+    background-color: var(--background);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > footer .row {
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+  }
+
+  .body-scroller {
+    color: var(--primary);
+    font-size: 2rem;
+  }
+}
+
+/* ############# SPECIALS ############# */
+
+.wrapper > main .row .column .box-work .work-item {
+  background-color: var(--box);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+.wrapper > main .row .column .box-work .work-item span:first-of-type {
+  font-size: 80%;
+}
+
+.wrapper > main .row .column .box-work .work-item a {
+  color: var(--primary);
+}
+
+.wrapper > main .row .column .box-education .education-item {
+  background-color: var(--box);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+.wrapper > main .row .column .box-education .education-item span:first-of-type {
+  font-size: 80%;
+}
+
+.wrapper > main .row .column .box-education .education-item a {
+  color: var(--primary);
+}
+
+.wrapper > main .row .column .box-skillz .skillz-item-progress {
+  background-color: var(--box);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+.wrapper > main .row .column .box-skillz .skillz-item-progress progress[value] {
+  background: var(--background);
+}
+
+.wrapper > main .row .column .box-skillz .skillz-item-progress progress[value]::-webkit-progress-bar {
+  background: var(--background);
+}
+
+.wrapper > main .row .column .box-skillz .skillz-item-progress progress[value]::-webkit-progress-value {
+  background: var(--primary);
+}
+
+.wrapper > main .row .column .box-skillz .skillz-item-progress progress[value]::-moz-progress-bar {
+  background: var(--primary);
+}
+
+.wrapper > main .row .column .box-skillz .skillz-item-circle {
+  background-color: var(--box);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+.wrapper > main .row .column .box-skillz .skillz-item-circle .circlette svg > circle {
+  stroke: var(--background);
+  fill: var(--background);
+}
+
+.wrapper > main .row .column .box-skillz .skillz-item-circle .circlette svg > circle.c-bar {
+  stroke: var(--primary);
+}
+
+.wrapper > main .row .column .box-skillz .skillz-item-circle .circlette .c-name,
+.wrapper > main .row .column .box-skillz .skillz-item-circle .circlette .c-exp {
+  color: var(--primary);
+}
