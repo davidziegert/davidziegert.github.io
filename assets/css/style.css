@@ -1,0 +1,92 @@
+/* ############# GRID ############# */
+
+html,
+body,
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+
+  max-height: 100vh;
+  max-width: 100vw;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* ############# ELEMENTS ############# */
+
+/* mobile */
+
+@media (min-width: 0px) and (max-width: 1279px) {
+  /* nav */
+
+  .wrapper > nav .row .column .main-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  .wrapper > nav .row .column .main-menu .menu-item {
+    width: 100vw;
+    height: calc(25vh - 0.15rem);
+    transition: all 0.5s ease;
+  }
+
+  .wrapper > nav .row .column .main-menu .menu-item.big {
+    height: calc(40vh - 0.15rem) !important;
+  }
+
+  .wrapper > nav .row .column .main-menu .menu-item a {
+    width: 100vw;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 1rem;
+  }
+}
+
+/* no mobile */
+
+@media (width >=1280px) {
+  /* nav */
+
+  .wrapper > nav .row .column .main-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  .wrapper > nav .row .column .main-menu .menu-item {
+    width: calc(25vw - 0.15rem);
+    height: 100vh;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper > nav .row .column .main-menu .menu-item.big {
+    width: calc(40vw - 0.15rem) !important;
+  }
+
+  .wrapper > nav .row .column .main-menu .menu-item a {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem 1rem;
+  }
+}

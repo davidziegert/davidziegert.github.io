@@ -1,0 +1,329 @@
+/* ############# FONTS ############# */
+
+body {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 150%;
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+@media (width >=1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+h6 {
+  font-size: 1.25rem;
+  letter-spacing: -0.75%;
+  line-height: 150%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h5 {
+  font-size: 1.56rem;
+  letter-spacing: -1%;
+  line-height: 140%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h4 {
+  font-size: 1.95rem;
+  letter-spacing: -1.25%;
+  line-height: 130%;
+  font-weight: bold;
+  text-wrap: balance;
+  margin: 1.25rem 0;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h3 {
+  font-size: 2.44rem;
+  letter-spacing: -1.5%;
+  line-height: 120%;
+  font-weight: bold;
+  text-wrap: balance;
+  margin-bottom: 1.25rem;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h2 {
+  font-size: 3.05rem;
+  letter-spacing: -1.75%;
+  line-height: 110%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  font-size: 3.81rem;
+  letter-spacing: -2%;
+  line-height: 100%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+main a {
+  text-decoration: none;
+}
+
+/* ############# THEME ############# */
+
+:root {
+  --background: #1c1c1c;
+  --headline: #f5edd0;
+  --text: #a89880;
+  --box: #242424;
+  --border: #2e2e2e;
+  --primary: #ffc700;
+}
+
+/* ############# ELEMENTS ############# */
+
+/* mobile */
+
+@media (min-width: 0px) and (max-width: 1279px) {
+  html {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--headline);
+  }
+
+  .wrapper > nav .row:first-of-type {
+    background-color: var(--box);
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > nav .row:first-of-type .column .box-hamburger button {
+    border: 1px solid var(--primary);
+  }
+
+  .wrapper > nav .row:first-of-type .column .box-hamburger button .line {
+    stroke: var(--primary);
+  }
+
+  .wrapper > nav .row:last-of-type {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > nav .row:last-of-type .column .box-menu .main-menu .menu-item a {
+    font-size: 2.44rem;
+    letter-spacing: -1.5%;
+    line-height: 120%;
+    font-weight: bold;
+    text-wrap: balance;
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+
+    color: var(--primary);
+  }
+
+  .wrapper > .content {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > .content header {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > .content aside .row .column:first-of-type {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wrapper > .content aside .row .column:last-of-type a {
+    color: var(--primary);
+  }
+
+  .wrapper > .content footer {
+    background-color: var(--box);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+  }
+
+  .wrapper > .content footer .row .column .box-scroller button {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+}
+
+/* no mobile */
+
+@media (width >=1280px) {
+  html {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--headline);
+  }
+
+  .wrapper > nav {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > nav .row:last-of-type {
+    background-color: var(--box);
+    color: var(--text);
+    border-top: 4px solid var(--border);
+    border-bottom: 4px solid var(--border);
+    border-right: 4px solid var(--border);
+  }
+
+  .wrapper > nav .row:last-of-type .column .box-menu .main-menu .menu-item a {
+    font-size: 1.56rem;
+    letter-spacing: -1%;
+    line-height: 140%;
+    font-weight: bold;
+    text-wrap: balance;
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+
+    color: var(--primary);
+  }
+
+  .wrapper > nav .row:last-of-type .column .box-menu .main-menu .menu-item a:hover {
+    color: var(--text);
+  }
+
+  .wrapper > .content aside .row .column .box-map {
+    border: 4px solid var(--border);
+  }
+
+  .wrapper > .content aside .row .column:last-of-type a {
+    color: var(--primary);
+  }
+
+  .wrapper > .content aside .row .column:last-of-type a:hover {
+    color: var(--text);
+  }
+
+  .wrapper > .content footer {
+    background-color: var(--background);
+    color: var(--text);
+  }
+
+  .wrapper > .content footer .row {
+    background-color: var(--box);
+    color: var(--text);
+    border-top: 4px solid var(--border);
+    border-bottom: 4px solid var(--border);
+    border-left: 4px solid var(--border);
+  }
+
+  .wrapper > .content footer .row .column .box-scroller button {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+
+  .wrapper > .content footer .row .column .box-scroller button:hover {
+    color: var(--text);
+    border: 1px solid var(--text);
+  }
+}
+
+/* ############# BOXES ############# */
+
+/* mobile */
+
+@media (min-width: 0px) and (max-width: 1279px) {
+  .wrapper > .content main .row .column .box-work,
+  .wrapper > .content main .row .column .box-education {
+    border-left: 1px solid currentColor;
+  }
+
+  .wrapper > .content main .row .column .box-work .work-item .right span:first-of-type,
+  .wrapper > .content main .row .column .box-education .education-item .right span:first-of-type {
+    font-size: 1.25rem;
+    letter-spacing: -0.75%;
+    font-weight: bold;
+    text-wrap: balance;
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+  }
+}
+
+@media (width >=1280px) {
+  .wrapper > .content main .row .column .box-work .work-item .left,
+  .wrapper > .content main .row .column .box-education .education-item .left {
+    border-right: 1px solid currentColor;
+  }
+
+  .wrapper > .content main .row .column .box-work .work-item .right span:first-of-type,
+  .wrapper > .content main .row .column .box-education .education-item .right span:first-of-type {
+    font-size: 1.25rem;
+    letter-spacing: -0.75%;
+    font-weight: bold;
+    text-wrap: balance;
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+  }
+
+  .wrapper > .content main .row .column .box-skillz .skill-item:hover {
+    cursor: pointer;
+  }
+
+  .wrapper > .content main .row .column .box-skillz .skill-item:hover .left {
+    font-weight: bold;
+  }
+
+  .wrapper > .content main .row .column .box-skillz .skill-item:hover .right {
+    color: var(--primary);
+  }
+}

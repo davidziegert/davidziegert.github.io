@@ -1,0 +1,66 @@
+/* ############# FONTS ############# */
+
+body {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 150%;
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+@media (width >=1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.wrapper > main .row .column .box-error span {
+  font-size: 1.56rem;
+  letter-spacing: -1%;
+  line-height: 140%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.wrapper > main .row .column .box-error span.small {
+  font-size: 1.25rem;
+  letter-spacing: -0.75%;
+  line-height: 150%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* ############# THEME ############# */
+
+:root {
+  --background: #1c1c1c;
+  --headline: #f5edd0;
+  --text: #a89880;
+  --box: #242424;
+  --border: #2e2e2e;
+  --primary: #ffc700;
+}
+
+/* ############# ELEMENTS ############# */
+
+.wrapper {
+  background-image: url("../images/pattern_1.webp");
+  background-repeat: repeat;
+}
+
+.wrapper > main .row .column .box-error span {
+  color: var(--background);
+}
+
+.wrapper > main .row .column .box-error span.small {
+  color: var(--box);
+}

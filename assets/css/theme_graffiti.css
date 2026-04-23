@@ -1,0 +1,91 @@
+/* ############# FONTS ############# */
+
+body {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 150%;
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  font-size: 1.95rem;
+  letter-spacing: -1.25%;
+  line-height: 130%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+
+  margin-bottom: 1.25rem;
+}
+
+@media (width >=1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.44rem;
+    letter-spacing: -1.5%;
+    line-height: 120%;
+    font-weight: bold;
+    text-wrap: balance;
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+
+    margin-bottom: 1.5rem;
+  }
+}
+
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* ############# THEME ############# */
+
+:root {
+  --background: #fdf8ee;
+  --headline: #2a2010;
+  --text: #7a6a50;
+  --box: #fff8e6;
+  --border: #e8dfc8;
+  --primary: #ffc700;
+}
+
+/* ############# ELEMENTS ############# */
+
+/* mobile */
+
+html,
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+h1 {
+  color: var(--headline);
+}
+
+.wrapper > aside {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.wrapper > main {
+  background-color: var(--background);
+  color: var(--text);
+}

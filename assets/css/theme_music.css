@@ -1,0 +1,154 @@
+/* ############# FONTS ############# */
+
+body {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: 150%;
+
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+@media (width >=1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+h6 {
+  font-size: 1.25rem;
+  letter-spacing: -0.75%;
+  line-height: 150%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h5 {
+  font-size: 1.56rem;
+  letter-spacing: -1%;
+  line-height: 140%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h4 {
+  font-size: 1.95rem;
+  letter-spacing: -1.25%;
+  line-height: 130%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h3 {
+  font-size: 2.44rem;
+  letter-spacing: -1.5%;
+  line-height: 120%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h2 {
+  font-size: 3.05rem;
+  letter-spacing: -1.75%;
+  line-height: 110%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  font-size: 3.81rem;
+  letter-spacing: -2%;
+  line-height: 100%;
+  font-weight: bold;
+  text-wrap: balance;
+
+  margin-bottom: 1.5rem;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+}
+
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+/* ############# THEME ############# */
+
+:root {
+  --background: #1c1c1c;
+  --headline: #f5edd0;
+  --text: #a89880;
+  --box: #242424;
+  --border: #2e2e2e;
+  --primary: #ffc700;
+}
+
+/* ############# ELEMENTS ############# */
+
+html,
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+/* header */
+
+.wrapper > header {
+  background-color: var(--background);
+  color: var(--headline);
+}
+
+.wrapper > header .row .column .box-hamburger button {
+  color: var(--primary);
+}
+
+/* nav */
+
+.wrapper > nav {
+  background-color: var(--background);
+  color: var(--headline);
+}
+
+.wrapper > nav .row .column .main-menu .current-page-item {
+  color: var(--primary);
+}
+
+/* main */
+
+.wrapper > main {
+  background-color: var(--box);
+  color: var(--text);
+}
+
+.wrapper > main .row .column h1 {
+  color: var(--headline);
+}
+
+.wrapper > main .row .column .box-videos .video:hover a figure figcaption {
+  color: var(--primary);
+}
