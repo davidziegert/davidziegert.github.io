@@ -17,6 +17,12 @@ body {
   }
 }
 
+@media (width <=600px) {
+  body {
+    font-size: 12px;
+  }
+}
+
 .wrapper > main .row .column .box-error span {
   font-size: 1.56rem;
   letter-spacing: -1%;
